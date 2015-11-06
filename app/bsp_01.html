@@ -8,9 +8,15 @@
 </head>
 <body data-ng-app="app" data-ng-init="name = 'Stoffl'">
 <h1>{{name}}</h1>
-<input data-ng-model="name">
+
 <div data-ng-controller="myController">
-    <p data-ng-bind="liste">    </p>
+    <p data-ng-bind="liste"></p>
+    <input data-ng-model="name">
+    <ul>
+        <li data-ng-repeat="item in liste | filter:name">
+            {{item}}
+        </li>
+    </ul>
 </div>
 </body>
 </html>
