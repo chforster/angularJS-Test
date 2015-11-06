@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="app_01.js"></script>
+</head>
+<body data-ng-app="app" data-ng-init="name = 'Stoffl'">
+<h1>{{name}}</h1>
+<input data-ng-model="name">
+<div data-ng-controller="myController">
+    <p data-ng-bind="liste">    </p>
+</div>
+</body>
+</html>
